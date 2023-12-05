@@ -1,0 +1,260 @@
+:root{
+  --black: #282B22;
+  --primary-color  : #3D4A39;
+  --btn-color: #AE7B3C;
+  --white: #fff;
+  --btn-hover: #CC9654;
+  --form-hover: #E11616;
+}
+
+
+/* raleway-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v29-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/raleway-v29-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/raleway-v29-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/raleway-v29-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* global styles */
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  font-family: Raleway,sans-serif;
+}
+ul, ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header styles */
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.logo{
+  display: flex;
+}
+.nav__list{
+  display: flex;
+  gap: 40px;
+}
+.nav__item{
+font-family: Raleway,sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 100%; /* 16px */
+padding: 15px 0;
+}
+.nav__link{
+    color: var(--black)
+}
+.nav__link:hover{
+  color: var(--primary-color);
+}
+.social{
+  display: flex;
+  align-items: center; 
+  gap: 15px;
+}
+.social__link path:hover{
+  fill: var(--black);
+}
+.phone{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.phone__icon{
+  display: flex;
+}
+.phone__link{
+  color: var(--primary-color);
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.hero{
+  background-image: url(/static/imgs/jpg/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-container{
+  margin-bottom: 140px;
+}
+.content{
+  padding: 120px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.title{
+  color: var(--white);
+  font-family: Lato,sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  max-width: 446px;
+}
+.subtitle{
+  color: var(--white);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  max-width: 537px;
+  padding-bottom: 50px;
+}
+.btn{
+  color: var(--white);
+  font-family: Raleway,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  padding: 22px 56px;
+  border: none;
+  background-color: var(--btn-color);
+  margin-bottom: 120px;
+}
+.line{
+  padding-bottom: px;
+  max-width: 1200px;
+}
+.hero-last{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-btm{
+  display: flex;
+  gap: 25px;
+  /* align-items: center; */
+  padding-top: -5px;
+}
+.hero-btm-img{
+  display: flex;
+}
+.hero-btm-img-2{
+  display: flex;
+ transform: rotate(180deg);
+}
+.num{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0 0;
+
+}
+.number{
+  color: var(--white);
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 8px 11px;
+  opacity: 0.3;
+  margin-bottom: 45px;
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-box-title{
+  color: var(--, #282B22);
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 125%; /* 57.5px */
+  text-transform: uppercase;
+  padding-bottom: 80px;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  margin-bottom: 140px;
+}
+.card{
+  border-left: 1px solid var(--black) ;
+  border-right: 1px solid var(--black);
+  padding: 0 30px;
+}
+.card-title{
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+  opacity: 0.5;
+  padding-bottom: 60px;
+}
+.card-subtitle{
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+  padding-bottom: 30px; 
+}
